@@ -11,10 +11,15 @@ gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass', '~> 3.3.3'
 gem 'omniauth-github'
 gem 'figaro'
+gem 'capybara'
 
 group :development, :test do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'pry'
   gem 'spring'
+end
+
+group :test do
+  gem 'simplecov', require: false
 end
